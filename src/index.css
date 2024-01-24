@@ -54,6 +54,22 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.board {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.card {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  border-color: transparent;
+  background-color: #e13232;
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
