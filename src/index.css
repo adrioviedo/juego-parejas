@@ -48,6 +48,7 @@ button {
 }
 button:hover {
   border-color: #646cff;
+  background-color: #898ef889;
 }
 button:focus,
 button:focus-visible {
@@ -57,19 +58,30 @@ button:focus-visible {
 .board {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 10px;
+  gap: 20px;
 }
 
 .card {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 120px;
   cursor: pointer;
-  border-color: transparent;
-  background-color: #e13232;
+  background: url(./assets/back.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
   display: flex;
   place-content: center;
   place-items: center;
+  padding: 1rem;
+  font-size: 5rem;
 }
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
